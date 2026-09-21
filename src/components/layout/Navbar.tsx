@@ -17,6 +17,7 @@ import { navLinks, roomTypes, amenities, experiences } from '../../data/siteData
 import Button from '../ui/Button'
 import clsx from 'clsx'
 import './Navbar.css'
+import { asset } from '../../lib/paths'
 
 const NAV_H = 124
 const BAR_Y = 10
@@ -265,7 +266,7 @@ export default function Navbar() {
           <nav className="nav-left">{leftLinks.map(renderDesktopLink)}</nav>
 
           <Link to="/" className="nav-logo" aria-label="Paciano Home">
-            <img src="/images/brand/paciano-logo.png" alt="Paciano Nature Resort" />
+            <img src={asset("/images/brand/paciano-logo.png")} alt="Paciano Nature Resort" />
           </Link>
 
           <div className="nav-right">

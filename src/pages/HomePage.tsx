@@ -14,6 +14,7 @@ import Amenities from '../components/home/Amenities'
 import ContactCTA from '../components/home/ContactCTA'
 import Footer from '../components/layout/Footer'
 import FloatingPanel from '../components/ui/FloatingPanel'
+import { asset } from '../lib/paths'
 
 const pageVariants = {
   initial: { opacity: 0 },
@@ -43,11 +44,11 @@ export default function HomePage() {
           <Features />
         </motion.div>
 
-        <FloatingPanel soft texture="/images/background/colour1-soft.png" leafBlur="left" delay={0.08} enter="right">
+        <FloatingPanel soft texture={asset("/images/background/colour1-soft.png")} leafBlur="left" delay={0.08} enter="right">
           <Rooms />
         </FloatingPanel>
 
-        <FloatingPanel soft texture="/images/background/colour2-soft.png" leafBlur delay={0.1} enter="down">
+        <FloatingPanel soft texture={asset("/images/background/colour2-soft.png")} leafBlur delay={0.1} enter="down">
           <Experiences />
         </FloatingPanel>
 
@@ -55,23 +56,23 @@ export default function HomePage() {
           <StatsSection />
         </FloatingPanel>
 
-        <FloatingPanel soft texture="/images/background/colour4-soft.png" leafBlur delay={0.14} overflowVisible enter="up">
+        <FloatingPanel soft texture={asset("/images/background/colour4-soft.png")} leafBlur delay={0.14} overflowVisible enter="up">
           <LifestyleSection />
         </FloatingPanel>
 
-        <FloatingPanel soft texture="/images/background/colour5-soft.png" leafBlur delay={0.16} enter="right">
+        <FloatingPanel soft texture={asset("/images/background/colour5-soft.png")} leafBlur delay={0.16} enter="right">
           <Dining />
         </FloatingPanel>
 
-        <FloatingPanel soft texture="/images/background/colour6-soft.png" leafBlur="heavy" delay={0.18} overflowVisible enter="down">
+        <FloatingPanel soft texture={asset("/images/background/colour6-soft.png")} leafBlur="heavy" delay={0.18} overflowVisible enter="down">
           <Gallery />
         </FloatingPanel>
 
-        <FloatingPanel soft texture="/images/background/colour3-soft.png" leafBlur="left" delay={0.2} overflowVisible enter="left">
+        <FloatingPanel soft texture={asset("/images/background/colour3-soft.png")} leafBlur="left" delay={0.2} overflowVisible enter="left">
           <Testimonials />
         </FloatingPanel>
 
-        <FloatingPanel soft texture="/images/background/colour1-soft.png" delay={0.22} overflowVisible enter="up">
+        <FloatingPanel soft texture={asset("/images/background/colour1-soft.png")} delay={0.22} overflowVisible enter="up">
           <Amenities />
         </FloatingPanel>
 
@@ -79,7 +80,7 @@ export default function HomePage() {
           <ContactCTA />
         </FloatingPanel>
 
-        <FloatingPanel texture="/images/background/colour-footer.png" delay={0.26} enter="down">
+        <FloatingPanel texture={asset("/images/background/colour-footer.png")} delay={0.26} enter="down">
           <Footer embedded />
         </FloatingPanel>
       </div>

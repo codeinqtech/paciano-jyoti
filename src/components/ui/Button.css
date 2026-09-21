@@ -99,6 +99,14 @@
   max-width: 64px;
 }
 
+.lux-btn--compact-media .lux-btn-media {
+  top: -12px;
+  left: 2px;
+  width: 42px;
+  height: 42px;
+  max-width: 42px;
+}
+
 .lux-btn--sm .lux-btn-media {
   left: -4px;
   top: -12px;

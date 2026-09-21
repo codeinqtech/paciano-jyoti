@@ -5,6 +5,7 @@ import { ArrowRight } from 'lucide-react'
 import Button from '../ui/Button'
 import { siteConfig } from '../../data/siteData'
 import { FadeIn } from '../ui/AnimatedSection'
+import { asset } from '../../lib/paths'
 
 export default function StatsSection() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -13,7 +14,9 @@ export default function StatsSection() {
     const video = videoRef.current
     if (!video) return
     video.muted = false
-    void video.play()
+    void video.play().catch(() => {
+      /* browser may block unmute autoplay; ignore */
+    })
   }
 
   const mute = () => {
@@ -32,7 +35,7 @@ export default function StatsSection() {
         <video
           ref={videoRef}
           className="w-full h-full object-cover object-center"
-          src="/videos/new-paciano-banner-Video-one-2.mp4"
+          src={asset('/videos/new-paciano-banner-Video-one-2.mp4')}
           autoPlay
           loop
           muted

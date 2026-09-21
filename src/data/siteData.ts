@@ -1,3 +1,5 @@
+import { asset } from '../lib/paths'
+
 export const siteConfig = {
   name: 'Paciano',
   tagline: 'Nature Resort',
@@ -12,7 +14,7 @@ export const siteConfig = {
     instagram: 'https://www.instagram.com/paciano.in',
     facebook: 'https://www.facebook.com/pacianoresortindia/',
   },
-  logo: '/images/brand/logo-1.png',
+  logo: asset('/images/brand/logo-1.png'),
   rating: 4.2,
   reviewCount: 77,
   stats: [
@@ -25,35 +27,35 @@ export const siteConfig = {
 
 export const heroSlides = [
   {
-    image: '/images/hero/hero-banner-1.png',
+    image: asset('/images/hero/hero-banner-1.png'),
     script: 'Escape. Unwind. Reconnect.',
     title: 'Luxury in the Lap of Nature',
     subtitle:
       'Nestled in verdant tea plantations and cradled by a serene river at the gateway of North Bengal.',
   },
   {
-    image: '/images/hero/hero-banner-2.png',
+    image: asset('/images/hero/hero-banner-2.png'),
     script: 'Luxury in Every Detail',
     title: 'Serenity by the Pool',
     subtitle:
       'Unwind in our sparkling infinity pool overlooking misty tea gardens and forested hills.',
   },
   {
-    image: '/images/hero/hero-banner-3.png',
+    image: asset('/images/hero/hero-banner-3.png'),
     script: 'Savour the Moment',
     title: 'Dine by the River',
     subtitle:
       'Experience al fresco dining and curated flavours amidst nature\'s most breathtaking backdrop.',
   },
   {
-    image: '/images/hero/hero-banner-4.png?v=3',
+    image: asset('/images/hero/hero-banner-4.png?v=3'),
     script: 'From first light to starlight',
     title: 'A Day in the Hills',
     subtitle:
       'Sunrise over tea gardens, a living river, and a sky that fades from gold to a canopy of stars.',
   },
   {
-    image: '/images/hero/daycycle-05/noon.png',
+    image: asset('/images/hero/daycycle-05/noon.png'),
     script: 'River light, mountain hush',
     title: 'A Full Day at Paciano',
     subtitle:
@@ -94,25 +96,25 @@ export const features = [
     icon: 'users',
     title: 'Banquet for 200',
     description: 'Host weddings, conferences, and gatherings for up to 200 guests at Paciano.',
-    image: '/images/gallery/living-space-hd.png',
+    image: asset('/images/gallery/living-space-hd.png'),
   },
   {
     icon: 'waves',
     title: 'Spa & Sparkling Pool',
     description: 'A world-class spa, children’s play area, and a pool to unwind after tea-garden days.',
-    image: '/images/gallery/pool-deck-hd.png',
+    image: asset('/images/gallery/pool-deck-hd.png'),
   },
   {
     icon: 'binoculars',
     title: 'Wildlife at the Door',
     description: 'Kathambari Forest, Gajoldoba, Mongpong, Chapramari, and Murti are a short drive away.',
-    image: '/images/gallery/valley-light-hd.png',
+    image: asset('/images/gallery/valley-light-hd.png'),
   },
   {
     icon: 'heart',
     title: 'Warm Paciano Service',
     description: 'Personalised hospitality so every family, couple, and guest feels at home.',
-    image: '/images/gallery/bath-sanctuary-hd.png',
+    image: asset('/images/gallery/bath-sanctuary-hd.png'),
   },
 ]
 
@@ -121,7 +123,7 @@ export const roomTypes = [
     id: 'standard',
     name: 'Standard Rooms',
     subtitle: 'Couple Rooms',
-    image: '/images/rooms/stay-standard.png',
+    image: asset('/images/rooms/stay-standard.png'),
     occupancy: '2 Adults + 1 Child (max.)',
     bed: '1 King Size Bed',
     description:
@@ -139,7 +141,7 @@ export const roomTypes = [
     id: 'premium',
     name: 'Premium Rooms',
     subtitle: 'Family Rooms',
-    image: '/images/rooms/stay-premium.png',
+    image: asset('/images/rooms/stay-premium.png'),
     occupancy: '3 Adults + 1 Child (max.)',
     bed: '1 King Size Bed + 1 Single Bed',
     description:
@@ -157,7 +159,7 @@ export const roomTypes = [
     id: 'deluxe',
     name: 'Deluxe River View',
     subtitle: 'Suite Rooms',
-    image: '/images/rooms/stay-river.png',
+    image: asset('/images/rooms/stay-river.png'),
     occupancy: '2 Adults + 1 Child (max.)',
     bed: '1 King Size Bed',
     description:
@@ -176,7 +178,7 @@ export const roomTypes = [
 export const roomAmenities = [
   {
     category: 'Rooms',
-    image: '/images/premium/premium-room.png',
+    image: asset('/images/premium/premium-room.png'),
     items: [
       'Maximum occupancy: 3 (2 Adults + 1 Child)',
       'Air-conditioned',
@@ -190,7 +192,7 @@ export const roomAmenities = [
   },
   {
     category: 'Food & Beverages',
-    image: '/images/premium/premium-dining.png',
+    image: asset('/images/premium/premium-dining.png'),
     items: [
       'Mini bar with drinks and snacks',
       'Mini refrigerator',
@@ -200,7 +202,7 @@ export const roomAmenities = [
   },
   {
     category: 'Bath Spaces',
-    image: '/images/premium/premium-wellness.png',
+    image: asset('/images/premium/premium-wellness.png'),
     items: [
       'International standard washroom accessories',
       'Premium deflection washbasin',
@@ -211,7 +213,7 @@ export const roomAmenities = [
   },
   {
     category: 'Furniture & Comfort',
-    image: '/images/premium/premium-room.png',
+    image: asset('/images/premium/premium-room.png'),
     items: [
       'Working corner with table and chair',
       'Personal corner with sofa and tea table',
@@ -226,7 +228,7 @@ export const savourItems = [
     id: 'restaurant',
     name: 'Multi-Cuisine Restaurant',
     description: 'Local favourites and global plates, crafted with care.',
-    image: '/images/dining/restaurant.png',
+    image: asset('/images/dining/restaurant.png'),
     icon: 'utensils',
     tone: 'teal',
   },
@@ -234,14 +236,14 @@ export const savourItems = [
     id: 'chef',
     name: 'Chef Specials',
     description: 'Signature curries and seasonal plates from our kitchen.',
-    image: '/images/dining/chef-specials.webp',
+    image: asset('/images/dining/chef-specials.webp'),
     tone: 'sage',
   },
   {
     id: 'gourmet',
     name: 'Gourmet Table',
     description: 'Shared spreads, fresh herbs, and slow afternoon dining.',
-    image: '/images/dining/gourmet-table.webp',
+    image: asset('/images/dining/gourmet-table.webp'),
     icon: 'soup',
     tone: 'gold',
   },
@@ -249,7 +251,7 @@ export const savourItems = [
     id: 'poolside',
     name: 'Poolside Bar',
     description: 'Sip signature cocktails or fresh mocktails by the sparkling pool.',
-    image: '/images/dining/poolside-lounge.webp',
+    image: asset('/images/dining/poolside-lounge.webp'),
     icon: 'wine',
     tone: 'slate',
   },
@@ -257,7 +259,7 @@ export const savourItems = [
     id: 'lounge',
     name: 'Signature Lounge',
     description: 'A lavish bar counter and lounge for evenings at Paciano.',
-    image: '/images/dining/signature-bar.png',
+    image: asset('/images/dining/signature-bar.png'),
     icon: 'glass',
     tone: 'copper',
   },
@@ -265,7 +267,7 @@ export const savourItems = [
     id: 'openair',
     name: 'Open-Air Dining',
     description: 'Dine under the stars beside tea gardens and a tranquil river.',
-    image: '/images/dining/open-air.webp',
+    image: asset('/images/dining/open-air.webp'),
     icon: 'leaf',
     tone: 'forest',
   },
@@ -273,7 +275,7 @@ export const savourItems = [
     id: 'terrace',
     name: 'Terrace Pour',
     description: 'Crystal glasses and golden-hour drinks on the deck.',
-    image: '/images/dining/terrace-pour.webp',
+    image: asset('/images/dining/terrace-pour.webp'),
     icon: 'sparkles',
     tone: 'teal',
   },
@@ -281,14 +283,14 @@ export const savourItems = [
     id: 'garden',
     name: 'Garden Cocktails',
     description: 'Hill views, cold pours, and unhurried evenings.',
-    image: '/images/dining/garden-drinks.webp',
+    image: asset('/images/dining/garden-drinks.webp'),
     tone: 'navy',
   },
   {
     id: 'candlelight',
     name: 'Candlelight Dinner',
     description: 'Starlit tables, candles, and a quiet river soundtrack.',
-    image: '/images/dining/candlelight.png',
+    image: asset('/images/dining/candlelight.png'),
     icon: 'flame',
     tone: 'gold',
   },
@@ -296,7 +298,7 @@ export const savourItems = [
     id: 'coffee',
     name: 'Coffee & Tea',
     description: 'Darjeeling pours, espresso, and pastry mornings.',
-    image: '/images/dining/coffee-tea.png',
+    image: asset('/images/dining/coffee-tea.png'),
     icon: 'coffee',
     tone: 'slate',
   },
@@ -306,7 +308,7 @@ export const diningVenues = [
   {
     id: 'restaurant',
     name: 'Multi-Cuisine Restaurant',
-    image: '/images/dining/restaurant.png',
+    image: asset('/images/dining/restaurant.png'),
     description:
       'From local favourites to global dishes, our chefs create everything with love and care. Customised menus for events and chef-special dishes.',
     highlights: ['Multi-cuisine food', 'Customised menus for events', 'Chef-special dishes'],
@@ -314,7 +316,7 @@ export const diningVenues = [
   {
     id: 'poolside',
     name: 'Poolside Bar',
-    image: '/images/dining/poolside-lounge.webp',
+    image: asset('/images/dining/poolside-lounge.webp'),
     description:
       'Sip signature cocktails or fresh mocktails while soaking in the sun. Friendly bartenders and poolside seating for the perfect unwind.',
     highlights: ['Signature cocktails', 'Fresh fruit mocktails', 'Poolside snacks and platters'],
@@ -322,7 +324,7 @@ export const diningVenues = [
   {
     id: 'openair',
     name: 'Open-Air Bar & Restaurant',
-    image: '/images/dining/open-air.webp',
+    image: asset('/images/dining/open-air.webp'),
     description:
       'Dine under the stars surrounded by lush tea gardens and overlooking a tranquil river. Al fresco dining at its finest.',
     highlights: ['Al fresco dining', 'Curated cocktails and wines', 'Live grills and seasonal specials'],
@@ -330,7 +332,7 @@ export const diningVenues = [
   {
     id: 'drinks',
     name: 'Drinks Corner',
-    image: '/images/dining/signature-bar.png',
+    image: asset('/images/dining/signature-bar.png'),
     description:
       'Our newest hangout with a lavish bar counter and spacious lounge. Perfect for relaxed evenings and lively catch-ups.',
     highlights: ['Expansive lounge seating', 'Premium spirits and cocktails', 'Ideal for groups'],
@@ -355,50 +357,50 @@ export const amenities = [
 export const experiences = [
   {
     title: 'Morning Yoga',
-    image: '/images/experiences/exp-yoga-front.png',
-    imageBack: '/images/experiences/exp-yoga-back.png',
+    image: asset('/images/experiences/exp-yoga-front.png'),
+    imageBack: asset('/images/experiences/exp-yoga-back.png'),
     description: 'Start your day with yoga amidst the serene tea gardens.',
   },
   {
     title: 'Nature Trails',
-    image: '/images/experiences/exp-trails-front.png',
-    imageBack: '/images/experiences/exp-trails-back.png',
+    image: asset('/images/experiences/exp-trails-front.png'),
+    imageBack: asset('/images/experiences/exp-trails-back.png'),
     description: 'Explore lush trails through tea plantations and riverside paths.',
   },
   {
     title: 'Candlelight Dinner',
-    image: '/images/hero/hero-banner-3.png',
-    imageBack: '/images/experiences/exp-dinner-back.png',
+    image: asset('/images/hero/hero-banner-3.png'),
+    imageBack: asset('/images/experiences/exp-dinner-back.png'),
     description: 'Romantic dining under the stars with the natural symphony of the forest.',
   },
   {
     title: 'Wellness & Spa',
-    image: '/images/premium/premium-wellness.png',
-    imageBack: '/images/experiences/exp-spa-back.png',
+    image: asset('/images/premium/premium-wellness.png'),
+    imageBack: asset('/images/experiences/exp-spa-back.png'),
     description: 'Rejuvenate with world-class spa treatments in tranquil surroundings.',
   },
   {
     title: 'Jungle Walks',
-    image: '/images/experiences/exp-jungle-front.png',
-    imageBack: '/images/experiences/exp-jungle-back.png',
+    image: asset('/images/experiences/exp-jungle-front.png'),
+    imageBack: asset('/images/experiences/exp-jungle-back.png'),
     description: 'Discover nearby forests and wildlife with guided nature walks.',
   },
   {
     title: 'Bird Watching',
-    image: '/images/experiences/exp-bird-front.png',
-    imageBack: '/images/experiences/exp-bird-back.png',
+    image: asset('/images/experiences/exp-bird-front.png'),
+    imageBack: asset('/images/experiences/exp-bird-back.png'),
     description: 'Spot exotic birds in the diverse ecosystem of the Dooars region.',
   },
   {
     title: 'Tea Garden Strolls',
-    image: '/images/experiences/exp-tea-front.png',
-    imageBack: '/images/experiences/exp-tea-back.png',
+    image: asset('/images/experiences/exp-tea-front.png'),
+    imageBack: asset('/images/experiences/exp-tea-back.png'),
     description: 'Walk through world-famous tea gardens and learn about tea cultivation.',
   },
   {
     title: 'Sightseeing Tours',
-    image: '/images/experiences/exp-tours-front.png',
-    imageBack: '/images/experiences/exp-tours-back.png',
+    image: asset('/images/experiences/exp-tours-front.png'),
+    imageBack: asset('/images/experiences/exp-tours-back.png'),
     description: 'Visit Kathambari Forest, Gajoldoba, Mongpong, Chapramari, and Murti.',
   },
 ]
@@ -496,37 +498,37 @@ export const testimonials = [
 
 export const guestVideos = [
   {
-    src: '/videos/testimonials/video-1.mp4',
+    src: asset('/videos/testimonials/video-1.mp4'),
     name: 'Ms. Ojaswi Niyogi',
     location: 'Kolkata',
     title: 'A stay that felt like home',
   },
   {
-    src: '/videos/testimonials/video-2.mp4',
+    src: asset('/videos/testimonials/video-2.mp4'),
     name: 'Mr. & Mrs. Tiwari',
     location: 'Kolkata',
     title: 'Our home, our story',
   },
   {
-    src: '/videos/testimonials/video-3.mp4',
+    src: asset('/videos/testimonials/video-3.mp4'),
     name: 'Lions Club',
     location: 'Siliguri',
     title: 'Together by the river',
   },
   {
-    src: '/videos/testimonials/video-4.mp4',
+    src: asset('/videos/testimonials/video-4.mp4'),
     name: 'Jagadish Agarwal',
     location: 'Siliguri',
     title: 'A picturesque escape',
   },
   {
-    src: '/videos/testimonials/video-5.mp4',
+    src: asset('/videos/testimonials/video-5.mp4'),
     name: 'Mrs. Namrata Singh',
     location: 'India',
     title: 'Peace in the tea gardens',
   },
   {
-    src: '/videos/testimonials/video-6.mp4',
+    src: asset('/videos/testimonials/video-6.mp4'),
     name: 'Saheli Kar & Indrani Basu',
     location: 'Kolkata',
     title: 'Memories by the hills',
@@ -534,30 +536,30 @@ export const guestVideos = [
 ]
 
 export const galleryItems = [
-  { src: '/images/hero/hero-banner-1.png', category: 'nature', label: 'River & tea gardens' },
-  { src: '/images/hero/hero-banner-2.png', category: 'wellness', label: 'Infinity pool' },
-  { src: '/images/hero/hero-banner-3.png', category: 'dining', label: 'Dine by the river' },
-  { src: '/images/gallery/aerial-paciano-hd.png', category: 'nature', label: 'Aerial Paciano' },
-  { src: '/images/gallery/valley-light-hd.png', category: 'nature', label: 'Valley light' },
-  { src: '/images/premium/premium-room.png', category: 'rooms', label: 'Luxury suite' },
-  { src: '/images/gallery/garden-room-hd.png', category: 'rooms', label: 'Garden room' },
-  { src: '/images/gallery/river-suite-hd.png', category: 'rooms', label: 'River suite' },
-  { src: '/images/rooms/stay-riverview.png', category: 'rooms', label: 'River view stay' },
-  { src: '/images/dining/restaurant.png', category: 'dining', label: 'Restaurant' },
-  { src: '/images/gallery/open-air-dining-hd.png', category: 'dining', label: 'Open-air dining' },
-  { src: '/images/dining/signature-bar.png', category: 'dining', label: 'Lounge bar' },
-  { src: '/images/dining/candlelight.png', category: 'dining', label: 'Candlelight dinner' },
-  { src: '/images/dining/coffee-tea.png', category: 'dining', label: 'Coffee & tea' },
-  { src: '/images/gallery/pool-deck-hd.png', category: 'wellness', label: 'Pool deck' },
-  { src: '/images/gallery/pool-evening-hd.png', category: 'wellness', label: 'Pool evening' },
-  { src: '/images/premium/premium-wellness.png', category: 'wellness', label: 'Spa & stillness' },
-  { src: '/images/gallery/bath-sanctuary-hd.png', category: 'wellness', label: 'Bath sanctuary' },
-  { src: '/images/gallery/living-space-hd.png', category: 'rooms', label: 'Living space' },
-  { src: '/images/gallery/tea-estate-hd.png', category: 'nature', label: 'Tea estate' },
-  { src: '/images/gallery/misty-hills-hd.png', category: 'nature', label: 'Misty hills' },
-  { src: '/images/gallery/resort-grounds-hd.png', category: 'nature', label: 'Resort grounds' },
-  { src: '/images/experiences/exp-yoga-front.png', category: 'wellness', label: 'Morning yoga' },
-  { src: '/images/experiences/exp-trails-front.png', category: 'nature', label: 'Nature trails' },
+  { src: asset('/images/hero/hero-banner-1.png'), category: 'nature', label: 'River & tea gardens' },
+  { src: asset('/images/hero/hero-banner-2.png'), category: 'wellness', label: 'Infinity pool' },
+  { src: asset('/images/hero/hero-banner-3.png'), category: 'dining', label: 'Dine by the river' },
+  { src: asset('/images/gallery/aerial-paciano-hd.png'), category: 'nature', label: 'Aerial Paciano' },
+  { src: asset('/images/gallery/valley-light-hd.png'), category: 'nature', label: 'Valley light' },
+  { src: asset('/images/premium/premium-room.png'), category: 'rooms', label: 'Luxury suite' },
+  { src: asset('/images/gallery/garden-room-hd.png'), category: 'rooms', label: 'Garden room' },
+  { src: asset('/images/gallery/river-suite-hd.png'), category: 'rooms', label: 'River suite' },
+  { src: asset('/images/rooms/stay-riverview.png'), category: 'rooms', label: 'River view stay' },
+  { src: asset('/images/dining/restaurant.png'), category: 'dining', label: 'Restaurant' },
+  { src: asset('/images/gallery/open-air-dining-hd.png'), category: 'dining', label: 'Open-air dining' },
+  { src: asset('/images/dining/signature-bar.png'), category: 'dining', label: 'Lounge bar' },
+  { src: asset('/images/dining/candlelight.png'), category: 'dining', label: 'Candlelight dinner' },
+  { src: asset('/images/dining/coffee-tea.png'), category: 'dining', label: 'Coffee & tea' },
+  { src: asset('/images/gallery/pool-deck-hd.png'), category: 'wellness', label: 'Pool deck' },
+  { src: asset('/images/gallery/pool-evening-hd.png'), category: 'wellness', label: 'Pool evening' },
+  { src: asset('/images/premium/premium-wellness.png'), category: 'wellness', label: 'Spa & stillness' },
+  { src: asset('/images/gallery/bath-sanctuary-hd.png'), category: 'wellness', label: 'Bath sanctuary' },
+  { src: asset('/images/gallery/living-space-hd.png'), category: 'rooms', label: 'Living space' },
+  { src: asset('/images/gallery/tea-estate-hd.png'), category: 'nature', label: 'Tea estate' },
+  { src: asset('/images/gallery/misty-hills-hd.png'), category: 'nature', label: 'Misty hills' },
+  { src: asset('/images/gallery/resort-grounds-hd.png'), category: 'nature', label: 'Resort grounds' },
+  { src: asset('/images/experiences/exp-yoga-front.png'), category: 'wellness', label: 'Morning yoga' },
+  { src: asset('/images/experiences/exp-trails-front.png'), category: 'nature', label: 'Nature trails' },
 ]
 
 export const galleryImages = galleryItems.map((item) => item.src)

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import type { ReactNode } from 'react'
 import { Leaf } from 'lucide-react'
+import { asset } from '../../lib/paths'
 
 interface PageHeroProps {
   title: string
@@ -14,7 +15,7 @@ export default function PageHero({
   title,
   subtitle,
   script,
-  image = '/images/hero/hero-banner-1.png',
+  image = asset('/images/hero/hero-banner-1.png'),
   children,
 }: PageHeroProps) {
   return (

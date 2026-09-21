@@ -1,6 +1,8 @@
 import clsx from 'clsx'
+import { Link } from 'react-router-dom'
 import { Children, isValidElement, type ButtonHTMLAttributes, type ReactNode } from 'react'
 import './Button.css'
+import { asset } from '../../lib/paths'
 
 type ButtonVariant = 'primary' | 'secondary' | 'gold' | 'ghost' | 'outline'
 type ButtonSize = 'md' | 'sm'
@@ -20,83 +22,85 @@ interface ButtonPreset {
   image: string
   subtitle: string
   kind: MediaKind
+  compactMedia?: boolean
 }
 
 const PRESETS: Record<string, ButtonPreset> = {
   'book your stay': {
-    image: '/images/buttons/leaf-13.png',
+    image: asset('/images/buttons/leaf-13.png'),
     subtitle: 'Stay Amidst Nature',
     kind: 'leaf',
   },
   'book now': {
-    image: '/images/buttons/icon-key.png',
+    image: asset('/images/buttons/icon-key.png'),
     subtitle: 'Reserve Your Suite',
     kind: 'icon',
   },
   'book this room': {
-    image: '/images/buttons/icon-key.png',
+    image: asset('/images/buttons/icon-key.png'),
     subtitle: 'River View Comfort',
     kind: 'icon',
   },
   'explore resort': {
-    image: '/images/buttons/icon-villa.png',
+    image: asset('/images/buttons/icon-villa.png'),
     subtitle: 'Gateway of Dooars',
     kind: 'icon',
   },
   'watch video': {
-    image: '/images/buttons/icon-play.png',
+    image: asset('/images/buttons/icon-play.png'),
     subtitle: 'From First Light',
     kind: 'icon',
+    compactMedia: true,
   },
   'learn more': {
-    image: '/images/buttons/icon-book.png',
+    image: asset('/images/buttons/icon-book.png'),
     subtitle: 'Our Paciano Story',
     kind: 'icon',
   },
   'view all stays': {
-    image: '/images/buttons/leaf-04.png',
+    image: asset('/images/buttons/leaf-04.png'),
     subtitle: 'Tea Garden Views',
     kind: 'leaf',
   },
   'explore rooms & villas': {
-    image: '/images/buttons/icon-villa.png',
+    image: asset('/images/buttons/icon-villa.png'),
     subtitle: 'Hill & River Stays',
     kind: 'icon',
   },
   'explore all experiences': {
-    image: '/images/buttons/icon-binoculars.png',
+    image: asset('/images/buttons/icon-binoculars.png'),
     subtitle: 'Nature At Its Best',
     kind: 'icon',
   },
   'view dining': {
-    image: '/images/buttons/icon-wine.png',
+    image: asset('/images/buttons/icon-wine.png'),
     subtitle: 'Savour The Moment',
     kind: 'icon',
   },
   'explore dining': {
-    image: '/images/buttons/icon-wine.png',
+    image: asset('/images/buttons/icon-wine.png'),
     subtitle: 'Dine By The River',
     kind: 'icon',
   },
   'view full gallery': {
-    image: '/images/buttons/icon-camera.png',
+    image: asset('/images/buttons/icon-camera.png'),
     subtitle: 'A Picturesque Frame',
     kind: 'icon',
   },
   'view more testimonials': {
-    image: '/images/buttons/icon-star.png',
+    image: asset('/images/buttons/icon-star.png'),
     subtitle: 'Guest Stories',
     kind: 'icon',
   },
   'submit enquiry': {
-    image: '/images/buttons/icon-envelope.png',
+    image: asset('/images/buttons/icon-envelope.png'),
     subtitle: "We'll Reply Soon",
     kind: 'icon',
   },
 }
 
 const DEFAULT_PRESET: ButtonPreset = {
-  image: '/images/buttons/leaf-01.png',
+  image: asset('/images/buttons/leaf-01.png'),
   subtitle: 'Paciano Retreat',
   kind: 'leaf',
 }
@@ -147,7 +151,13 @@ export default function Button({
   const media = image || preset.image
   const kicker = subtitle || preset.subtitle
   const kind = preset.kind
-  const classes = clsx('lux-btn', `lux-btn--${size}`, `lux-btn--${kind}`, className)
+  const classes = clsx(
+    'lux-btn',
+    `lux-btn--${size}`,
+    `lux-btn--${kind}`,
+    preset.compactMedia && 'lux-btn--compact-media',
+    className,
+  )
 
   const inner = (
     <>
@@ -167,6 +177,14 @@ export default function Button({
   )
 
   if (href) {
+    const internal = href.startsWith('/')
+    if (internal) {
+      return (
+        <Link to={href} className={classes}>
+          {inner}
+        </Link>
+      )
+    }
     return (
       <a href={href} className={classes}>
         {inner}

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import clsx from 'clsx'
+import { asset } from '../../lib/paths'
 
 interface LogoProps {
   className?: string
@@ -16,7 +17,7 @@ export default function Logo({ className, size = 'md' }: LogoProps) {
   return (
     <Link to="/" className={clsx('paciano-logo-plate group', className)} aria-label="Paciano Home">
       <img
-        src="/images/brand/paciano-logo.png"
+        src={asset("/images/brand/paciano-logo.png")}
         alt="Paciano Nature Resort"
         className={clsx(
           'paciano-logo-img',

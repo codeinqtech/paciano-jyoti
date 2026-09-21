@@ -1,4 +1,5 @@
-const leafSrc = '/images/hero/tree-leaves.png?v=2'
+import { asset } from '../../lib/paths'
+const leafSrc = asset('/images/hero/tree-leaves.png?v=2')
 
 export default function SwayingTree() {
   return (

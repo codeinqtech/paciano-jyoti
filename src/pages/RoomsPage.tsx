@@ -6,6 +6,7 @@ import Button from '../components/ui/Button'
 import AnimatedSection from '../components/ui/AnimatedSection'
 import { roomTypes, roomAmenities } from '../data/siteData'
 import { Check, Users, BedDouble } from 'lucide-react'
+import { asset } from '../lib/paths'
 
 export default function RoomsPage() {
   const [activeTab, setActiveTab] = useState(0)
@@ -16,7 +17,7 @@ export default function RoomsPage() {
         script="Stay With Us"
         title="Rooms & Amenities"
         subtitle="Luxurious rooms with modern amenities and stunning views of tea gardens, rivers, and hills."
-        image="/images/premium/premium-room.png"
+        image={asset("/images/premium/premium-room.png")}
       />
 
       <section className="section-padding py-20">

@@ -6,6 +6,7 @@ import BookingBar from './BookingBar'
 import HeroSlider from './HeroSlider'
 import SiteBackground from '../layout/SiteBackground'
 import { heroSlides } from '../../data/siteData'
+import { asset } from '../../lib/paths'
 
 const glassStats = [
   { icon: Building2, value: '24', label: 'Luxury Rooms' },
@@ -42,7 +43,7 @@ export default function Hero() {
             </div>
 
             <img
-              src="/images/brand/paciano-badge.png"
+              src={asset("/images/brand/paciano-badge.png")}
               alt="Paciano"
               className="hero-seal-badge"
             />

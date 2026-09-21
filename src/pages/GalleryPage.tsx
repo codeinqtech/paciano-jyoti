@@ -4,6 +4,7 @@ import { X } from 'lucide-react'
 import PageHero from '../components/ui/PageHero'
 import { galleryItems } from '../data/siteData'
 import { staggerContainer, staggerItem } from '../components/ui/AnimatedSection'
+import { asset } from '../lib/paths'
 
 export default function GalleryPage() {
   const [lightbox, setLightbox] = useState<string | null>(null)
@@ -19,7 +20,7 @@ export default function GalleryPage() {
         script="Gallery"
         title="A Picturesque Frame"
         subtitle="Tea gardens, river light, and the quiet luxury of Paciano — a gallery of Manabari."
-        image="/images/hero/hero-banner-1.png"
+        image={asset("/images/hero/hero-banner-1.png")}
       />
 
       <section className="section-padding py-20">

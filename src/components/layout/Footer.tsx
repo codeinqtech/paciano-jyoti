@@ -5,6 +5,7 @@ import { FadeIn } from '../ui/AnimatedSection'
 import Button from '../ui/Button'
 import Logo from '../ui/Logo'
 import clsx from 'clsx'
+import { asset } from '../../lib/paths'
 
 interface FooterProps {
   embedded?: boolean
@@ -16,7 +17,7 @@ export default function Footer({ embedded = false }: FooterProps) {
       {!embedded && <div className="absolute top-0 left-0 right-0 gradient-divider z-20" />}
 
       <img
-        src="/images/background/footer-tea.png"
+        src={asset("/images/background/footer-tea.png")}
         alt=""
         className="site-footer-tea"
       />

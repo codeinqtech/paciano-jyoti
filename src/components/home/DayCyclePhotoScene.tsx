@@ -1,3 +1,4 @@
+import { asset } from '../../lib/paths'
 const stars = [
   [8, 6, 2], [14, 11, 1], [19, 4, 2], [24, 9, 1], [31, 5, 2],
   [37, 13, 1], [43, 7, 2], [49, 3, 1], [54, 10, 2], [61, 6, 1],
@@ -24,7 +25,7 @@ export default function DayCyclePhotoScene() {
   return (
     <div className="dayphoto" aria-hidden>
       <img
-        src="/images/hero/daycycle-05/noon.png"
+        src={asset("/images/hero/daycycle-05/noon.png")}
         alt=""
         className="dayphoto-base"
       />

@@ -4,6 +4,7 @@ import SectionHeading from '../components/ui/SectionHeading'
 import AnimatedSection, { FadeIn, staggerContainer, staggerItem } from '../components/ui/AnimatedSection'
 import { siteConfig, distinctions, nearbyAttractions } from '../data/siteData'
 import { MapPin } from 'lucide-react'
+import { asset } from '../lib/paths'
 
 export default function AboutPage() {
   return (
@@ -16,7 +17,7 @@ export default function AboutPage() {
         script="About Paciano"
         title="Where Luxury Meets Nature"
         subtitle="A haven of tranquillity nestled in Manabari Tea Garden at the gateway of North Bengal."
-        image="/images/premium/premium-nature.png"
+        image={asset("/images/premium/premium-nature.png")}
       />
 
       <section className="section-padding py-20 md:py-28">
@@ -35,7 +36,7 @@ export default function AboutPage() {
           </AnimatedSection>
           <FadeIn direction="left">
             <img
-              src="/images/hero/hero-banner-1.png"
+              src={asset("/images/hero/hero-banner-1.png")}
               alt="Paciano resort"
               className="rounded-2xl shadow-xl w-full aspect-[4/3] object-cover"
             />

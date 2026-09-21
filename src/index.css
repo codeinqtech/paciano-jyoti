@@ -1592,7 +1592,7 @@ b {
   background-color: #f3ece0;
   background-image:
     linear-gradient(180deg, rgba(250, 248, 244, 0.38) 0%, rgba(245, 240, 232, 0.18) 48%, rgba(250, 248, 244, 0.32) 100%),
-    url('/images/background/testimonials-marble.png');
+    var(--bg-testimonials-marble);
   background-size: cover;
   background-position: center;
   border: 1px solid rgba(212, 184, 106, 0.5);
@@ -1603,7 +1603,7 @@ b {
   background-color: #0b1c24;
   background-image:
     linear-gradient(180deg, rgba(8, 20, 28, 0.42) 0%, rgba(8, 20, 28, 0.18) 48%, rgba(8, 20, 28, 0.48) 100%),
-    url('/images/background/rooms-marble.png');
+    var(--bg-rooms-marble);
   background-size: cover;
   background-position: center;
   border: 1px solid rgba(212, 184, 106, 0.48);
@@ -1614,7 +1614,7 @@ b {
   background-color: #f6edd8;
   background-image:
     linear-gradient(180deg, rgba(255, 252, 246, 0.52) 0%, rgba(255, 248, 236, 0.28) 48%, rgba(255, 252, 246, 0.46) 100%),
-    url('/images/background/gallery-gold-silk.png');
+    var(--bg-gallery-gold-silk);
   background-size: cover;
   background-position: center;
   border: 1px solid rgba(212, 184, 106, 0.55);
@@ -1713,7 +1713,7 @@ b {
   background-color: #0c2428;
   background-image:
     linear-gradient(180deg, rgba(8, 22, 24, 0.28) 0%, rgba(8, 22, 24, 0.1) 48%, rgba(8, 22, 24, 0.34) 100%),
-    url('/images/background/colour-footer.png');
+    var(--bg-colour-footer);
   background-size: cover;
   background-position: center;
 }
@@ -3271,7 +3271,7 @@ b {
   display: block;
   width: 14px;
   height: 18px;
-  background-image: url('/images/hero/bird-flap.png');
+  background-image: var(--bird-flap);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 126px 18px;
@@ -3738,7 +3738,7 @@ b {
   display: block;
   width: 14px;
   height: 18px;
-  background-image: url('/images/hero/bird-flap.png');
+  background-image: var(--bird-flap);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 126px 18px;

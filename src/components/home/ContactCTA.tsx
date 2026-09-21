@@ -1,12 +1,13 @@
 import { ArrowRight } from 'lucide-react'
 import Button from '../ui/Button'
 import { FadeIn } from '../ui/AnimatedSection'
+import { asset } from '../../lib/paths'
 
 export default function ContactCTA() {
   return (
     <div className="relative h-[34rem] md:h-[42rem] lg:h-[48rem] overflow-hidden">
       <img
-        src="/images/cta/paciano-begin-journey.png"
+        src={asset("/images/cta/paciano-begin-journey.png")}
         alt="Paciano — leave the city noise for tea gardens and river light"
         className="absolute inset-0 h-full w-full object-cover object-[center_38%]"
       />

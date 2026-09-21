@@ -1,23 +1,24 @@
 import { motion } from 'framer-motion'
+import { asset } from '../../lib/paths'
 
 export const aboutDiamonds = [
   {
-    src: '/images/hero/hero-banner-1.png',
+    src: asset('/images/hero/hero-banner-1.png'),
     alt: 'Paciano riverside tea gardens',
     className: 'diamond-pos-top',
   },
   {
-    src: '/images/hero/hero-banner-2.png',
+    src: asset('/images/hero/hero-banner-2.png'),
     alt: 'Infinity pool in daylight',
     className: 'diamond-pos-right',
   },
   {
-    src: '/images/premium/premium-room.png',
+    src: asset('/images/premium/premium-room.png'),
     alt: 'Luxury guest room',
     className: 'diamond-pos-left',
   },
   {
-    src: '/images/premium/premium-dining.png',
+    src: asset('/images/premium/premium-dining.png'),
     alt: 'Resort dining',
     className: 'diamond-pos-bottom',
   },

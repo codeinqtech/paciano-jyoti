@@ -4,6 +4,7 @@ import SectionHeading from '../components/ui/SectionHeading'
 import FlipExperienceCard from '../components/home/FlipExperienceCard'
 import { experiences, nearbyAttractions } from '../data/siteData'
 import { MapPin } from 'lucide-react'
+import { asset } from '../lib/paths'
 
 export default function ExperiencesPage() {
   return (
@@ -12,7 +13,7 @@ export default function ExperiencesPage() {
         script="Discover"
         title="Experiences & Activities"
         subtitle="Jungle walks, tea garden strolls, bird watching, and enchanting open-air dining — immerse yourself in nature."
-        image="/images/experiences/exp-trails-front.png"
+        image={asset("/images/experiences/exp-trails-front.png")}
       />
 
       <section className="section-padding py-20">

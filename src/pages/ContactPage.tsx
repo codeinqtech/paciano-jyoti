@@ -4,6 +4,7 @@ import Button from '../components/ui/Button'
 import AnimatedSection from '../components/ui/AnimatedSection'
 import { siteConfig } from '../data/siteData'
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react'
+import { asset } from '../lib/paths'
 
 export default function ContactPage() {
   return (
@@ -12,7 +13,7 @@ export default function ContactPage() {
         script="Get In Touch"
         title="Contact Us"
         subtitle="Reservations, banquet enquiries, and a warm welcome to Paciano, Manabari Tea Garden."
-        image="/images/hero/hero-banner-3.png"
+        image={asset("/images/hero/hero-banner-3.png")}
       />
 
       <section className="section-padding py-20">

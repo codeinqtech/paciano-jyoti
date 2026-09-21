@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Button from '../ui/Button'
+import { asset } from '../../lib/paths'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -11,7 +12,7 @@ export default function LifestyleSection() {
       <div className="dine-nature-frame box-3d">
         <article className="dine-nature">
           <img
-            src="/images/dining/dine-nature-fullbleed.png"
+            src={asset("/images/dining/dine-nature-fullbleed.png")}
             alt="Dining by the river at Paciano"
             className="dine-nature-art"
           />

@@ -3,6 +3,7 @@ import PageHero from '../components/ui/PageHero'
 import SectionHeading from '../components/ui/SectionHeading'
 import AnimatedSection from '../components/ui/AnimatedSection'
 import { diningVenues } from '../data/siteData'
+import { asset } from '../lib/paths'
 
 export default function DiningPage() {
   return (
@@ -11,7 +12,7 @@ export default function DiningPage() {
         script="Savour"
         title="Dining & Beverages"
         subtitle="Amazing food and great vibes — from local favourites to global dishes, made with love and care."
-        image="/images/premium/premium-dining.png"
+        image={asset("/images/premium/premium-dining.png")}
       />
 
       <section className="section-padding py-20">
