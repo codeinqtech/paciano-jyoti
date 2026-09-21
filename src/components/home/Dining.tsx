@@ -28,6 +28,8 @@ const iconMap: Record<string, typeof UtensilsCrossed> = {
   coffee: Coffee,
 }
 
+const resolveIcon = (key?: string) => (key ? iconMap[key] : undefined) ?? UtensilsCrossed
+
 const slideTransition = { duration: 0.55, ease: [0.22, 1, 0.36, 1] as const }
 
 export default function Dining() {
@@ -40,10 +42,10 @@ export default function Dining() {
     setCurrent(index)
   }
 
-  const now = savourItems[current]
-  const last = savourItems[previous]
-  const NowIcon = iconMap[now.icon] ?? UtensilsCrossed
-  const LastIcon = iconMap[last.icon] ?? UtensilsCrossed
+  const now = savourItems[current] ?? savourItems[0]
+  const last = savourItems[previous] ?? savourItems[1] ?? savourItems[0]
+  const NowIcon = resolveIcon(now.icon)
+  const LastIcon = resolveIcon(last.icon)
 
   return (
     <div className="section-padding py-14 md:py-20">
@@ -104,7 +106,7 @@ export default function Dining() {
           viewport={{ once: true, amount: 0.15 }}
         >
           {savourItems.map((item, index) => {
-            const Icon = iconMap[item.icon] ?? UtensilsCrossed
+            const Icon = resolveIcon(item.icon)
             const active = index === current
 
             return (
